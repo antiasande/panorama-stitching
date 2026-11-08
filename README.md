@@ -1,4 +1,4 @@
-# 🌄 Panorama Image Stitching con OpenCV
+#  Panorama Image Stitching con OpenCV
 
 Implementación desde cero, **sin `cv2.Stitcher`**, de todo el proceso para crear panorámicas: detección de características, emparejamiento robusto, homografías, proyección cilíndrica, **ordenación automática de fotos desordenadas** y comparación de **6 técnicas de blending**.
 
@@ -9,7 +9,7 @@ Implementación desde cero, **sin `cv2.Stitcher`**, de todo el proceso para crea
 
 > Práctica de la asignatura **Fundamentos de Análisis de Imagen** (Grado en Ciencia de Datos e Inteligencia Artificial, UPM · curso 2025-26), realizada por **Antía Sande Fernández**, **Sergio Medina Hernández** y **Martín Hernández Castaño**.
 
-**👉 [Notebook completo con resultados](notebooks/panorama_stitching.ipynb) · [Memoria (PDF)](docs/memoria.pdf) · [Código del pipeline](src/panorama.py)**
+** [Notebook completo con resultados](notebooks/panorama_stitching.ipynb) · [Memoria (PDF)](docs/memoria.pdf) · [Código del pipeline](src/panorama.py)**
 
 ![Panorámica final de 7 imágenes](docs/img/panorama_final.jpg)
 <sub>Panorámica *wide-view* de 7 fotos: AKAZE + FLANN, proyección cilíndrica con focal estimada y mezcla multibanda.</sub>
@@ -63,7 +63,7 @@ Con 7 fotos el campo de visión supera los 180° y la proyección planar diverge
 | Superposición | Costuras rectas visibles |
 | Media / Feathering | Fantasmas: el autobús y la señal salen duplicados |
 | Máximo peso | Nítido, pero la costura corta el autobús, que se movió entre fotos |
-| **Multibanda** ✅ | Costuras de brillo invisibles y sin fantasmas en las zonas estáticas |
+| **Multibanda**  | Costuras de brillo invisibles y sin fantasmas en las zonas estáticas |
 | GraphCut + multibanda | La costura rodea el autobús, pero deja franjas de brillo en el cielo |
 
 ## Estructura del repositorio
